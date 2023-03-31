@@ -7,8 +7,10 @@ lazy val root = (project in file("."))
     name := "NGAScala",
       // https://mvnrepository.com/artifact/io.monix/monix-execution
       libraryDependencies ++= Seq( "io.monix" %% "monix-execution" % "3.4.1",
-        // https://mvnrepository.com/artifact/com.eed3si9n/sbt-assembly
-        //"com.eed3si9n" %% "sbt-assembly" % "sbt0.10.1_0.6"
+        // https://mvnrepository.com/artifact/org.scalatest/scalatest
+        "org.scalatest" %% "scalatest" % "3.2.15" % Test,
+        "org.scalamock" %% "scalamock" % "5.2.0" % Test
+
 
       )
 )
